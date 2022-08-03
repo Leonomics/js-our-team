@@ -44,18 +44,21 @@ for(let i = 0; i<teamMembers.length; i++){
     container.append(card);
     card.classList.add("card");
 
-    
     let userPhoto = document.createElement("img");
     userPhoto.src =  "img/" + member.userImage;
     card.append(userPhoto);
 
+    let paragraphWrapper = document.createElement("div");
+    card.append(paragraphWrapper);
+    paragraphWrapper.classList.add("paragraphWrapper");
+
     let paragraphName = document.createElement("p");
     paragraphName.innerHTML = member.userName;
-    card.append(paragraphName);
+    paragraphWrapper.append(paragraphName);
 
     let paragraphRole = document.createElement("p");
     paragraphRole.innerHTML = member.userRole;
-    card.append(paragraphRole);
+    paragraphWrapper.append(paragraphRole);
 
     
 }
