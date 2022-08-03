@@ -54,3 +54,23 @@ header{
     padding-bottom: 26px;
     text-align: center;
 }
+
+/*tablet*/
+@media screen and (max-width: 768px)   {
+    .card{
+        flex-basis: 45%;
+        margin-right: 8px;
+        margin-bottom: 8px;
+    }
+ }
+
+
+
+ /*smartphone*/
+ @media screen and (max-width: 480px)   {
+    .card{
+        flex-basis: 90%;
+        margin-right: 8px;
+        margin-bottom: 8px;
+    }
+ }
