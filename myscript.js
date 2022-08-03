@@ -1,4 +1,4 @@
-let paragraph = document.getElementById("paragraph");
+let container = document.getElementById("container");
 
 let teamMembers = [
 
@@ -38,5 +38,18 @@ let teamMembers = [
 for(let i = 0; i<teamMembers.length; i++){
     const member = teamMembers[i];
     console.log(member);
+    let paragraph = document.createElement("p");
+
+    paragraph.innerHTML = member.userName + " " + member.userRole;
+
+
+    container.append(paragraph);
+
+    let userPhoto = document.createElement("img");
+    userPhoto.src =  "img/" + member.userImage;
+    container.append(userPhoto);
+    
 }
+
+
 
