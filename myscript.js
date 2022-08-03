@@ -1,17 +1,4 @@
-let teamMember = {
-    userName,
-    userRole,
-    userImage
-}
 
-let teamMember1 = teamMember;
-let teamMember2 = teamMember;
-let teamMember3 = teamMember;
-let teamMember4 = teamMember;
-let teamMember5 = teamMember;
-let teamMember6 = teamMember;
-
-console.log(teamMember1)
 
 let teamMembers = [
     {
@@ -45,3 +32,8 @@ let teamMembers = [
         userImage:  "barbara-ramos-graphic-designer.jpg"
     }
 ]
+
+for(let i = 0; i<teamMembers.length; i++){
+    const member = teamMembers[i];
+    console.log(member);
+}
